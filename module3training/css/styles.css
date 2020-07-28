@@ -1,0 +1,164 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+}
+
+/* HEADER STARTS */
+
+#header-nav {
+  padding: 8px;
+}
+.container-fluid {
+  width: 100%;
+}
+
+#logo-img {
+  background: url("../images/spigalogo.png") no-repeat;
+  background-size: 150px;
+  filter: contrast(200%);
+  height: 50px;
+  width: 300px;
+
+  padding: 10px;
+}
+
+#logo-img .miamiword {
+  vertical-align: sub;
+  margin-left: 150px;
+  color: black;
+}
+
+#nav-list li a {
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+#reservationbutton {
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* HEADER ENDS HERE */
+
+/* MAIN CONTENT BEGINS */
+
+#backimg {
+  background: url("../images/spiga1foto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  margin-top: 0px;
+  zoom: 60%;
+}
+
+.infoblock {
+  background: #ffffff;
+  border: 1px solid black;
+  height: 500px;
+  margin-top: -300px;
+  margin-left: 50px;
+  /* overflow: hidden; */
+  font-weight: normal;
+  color: #85754e;
+  font-size: 100%;
+  float: left;
+}
+.innerbox {
+  margin: 40px 45px;
+}
+
+/* .container {
+  margin-left: 15px;
+} */
+
+h1 {
+  text-align: left;
+  font-size: 28px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #backimg {
+    zoom: 60%;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    margin-top: 350px;
+  }
+
+  #backimg {
+    zoom: 60%;
+  }
+
+  /* Header */
+
+  #nav-list li {
+    font-size: 15px;
+    margin-top: 9px;
+    text-align: right;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+}
+
+@media (max-width: 500px) {
+  #logo-img {
+    background-size: 130px;
+    width: 200px;
+  }
+  .miamiword {
+    display: none;
+  }
+  #backimg {
+    zoom: 40%;
+    height: 1000px;
+  }
+  .infoblock {
+    border: none;
+    text-align: left;
+    margin: 0;
+    margin-top: -330px;
+  }
+}
